@@ -1,0 +1,30 @@
+--
+-- File generated with SQLiteStudio v3.4.17 on Ñð ìàð 19 03:20:11 2025
+--
+-- Text encoding used: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: Avtosalon
+DROP TABLE IF EXISTS Avtosalon;
+
+CREATE TABLE IF NOT EXISTS Avtosalon (
+    avtosalon_id INTEGER      PRIMARY KEY,-- Unikal ID
+    marka        CHAR (20)    NOT NULL,-- Avtomobil brendi (Toyota, BMW)
+    model        CHAR (20)    NOT NULL,-- Avtomobil modeli (Camry, X5)
+    color        CHAR (20)    NOT NULL,-- Rangi
+    price        REAL         NOT NULL,-- Narxi
+    year         CHAR (4)     NOT NULL,-- Ishlab chiqarilgan yil
+    engine       VARCHAR (50),-- Motor turi
+    speed        VARCHAR (20),-- Maksimal tezlik
+    weight       CHAR (20)-- Og‘irligi 
+);
+
+INSERT INTO Avtosalon (avtosalon_id, marka, model, color, price, year, engine, speed, weight) VALUES (1, 'Chevrolet', 'Malibu', 'Black', 28000.0, '2024', '1.5 Turbo', '220 km/h', '1500 kg');
+INSERT INTO Avtosalon (avtosalon_id, marka, model, color, price, year, engine, speed, weight) VALUES (3, 'BMW', 'X5', 'Blue', 65000.0, '2022', '3.0L Turbo', '250 km/h', '2000 kg');
+INSERT INTO Avtosalon (avtosalon_id, marka, model, color, price, year, engine, speed, weight) VALUES (4, 'Hyundai', 'Sonata', 'Silver', 27000.0, '2023', '2.0L', '200 km/h', '1400 kg');
+INSERT INTO Avtosalon (avtosalon_id, marka, model, color, price, year, engine, speed, weight) VALUES (5, 'Tesla', 'Model S', 'Red', 75000.0, '2024', 'Elektr 100 kWh', '260 km/h', '1800 kg');
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;

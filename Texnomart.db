@@ -1,0 +1,32 @@
+--
+-- File generated with SQLiteStudio v3.4.17 on —р мар 19 04:02:27 2025
+--
+-- Text encoding used: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: Texnomart
+DROP TABLE IF EXISTS Texnomart;
+
+CREATE TABLE IF NOT EXISTS Texnomart (
+    id           INTEGER       PRIMARY KEY,
+    name_product VARCHAR (200) NOT NULL,
+    price        REAL          NOT NULL,
+    color        CHAR (20),
+    model        VARCHAR (200),
+    content      TEXT,
+    id_seriya    VARCHAR (200) NOT NULL
+);
+
+INSERT INTO Texnomart (id, name_product, price, color, model, content, id_seriya) VALUES (1, 'Samsung Galaxy S23', 9000000.0, 'Black', 'SM-S911B', '8GB RAM, 256GB Storage', 'S23-001');
+INSERT INTO Texnomart (id, name_product, price, color, model, content, id_seriya) VALUES (2, 'iPhone 14 Pro', 12000000.0, 'Gold', 'A2890', '128GB, Super Retina XDR display', 'IP14P-002');
+INSERT INTO Texnomart (id, name_product, price, color, model, content, id_seriya) VALUES (3, 'Xiaomi Redmi Note 12', 4500000.0, 'Blue', '22041219G', '6GB RAM, 128GB Storage', 'RN12-003');
+INSERT INTO Texnomart (id, name_product, price, color, model, content, id_seriya) VALUES (4, 'Lenovo Legion 5', 14000000.0, 'Gray', '82JW0012US', 'Ryzen 7, RTX 3060, 16GB RAM', 'LL5-004');
+INSERT INTO Texnomart (id, name_product, price, color, model, content, id_seriya) VALUES (5, 'Asus ROG Strix G15', 18000000.0, 'Black', 'G513QR', 'Ryzen 9, RTX 3070, 32GB RAM', 'ROG15-005');
+INSERT INTO Texnomart (id, name_product, price, color, model, content, id_seriya) VALUES (6, 'MacBook Air M2', 15500000.0, 'Silver', 'A2681', 'Apple M2 chip, 8-core CPU, 256GB SSD', 'MBA2-006');
+INSERT INTO Texnomart (id, name_product, price, color, model, content, id_seriya) VALUES (7, 'Dell XPS 13', 13000000.0, 'White', '9310', 'Intel i7, 16GB RAM, 512GB SSD', 'XPS13-007');
+INSERT INTO Texnomart (id, name_product, price, color, model, content, id_seriya) VALUES (8, 'HP Pavilion 15', 8000000.0, 'Silver', 'eh-3058ci', 'Ryzen 7, 16GB RAM, 512GB SSD', 'HP15-0030');
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;

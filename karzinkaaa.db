@@ -1,0 +1,35 @@
+--
+-- File generated with SQLiteStudio v3.4.17 on —р мар 19 03:50:19 2025
+--
+-- Text encoding used: System
+--
+PRAGMA foreign_keys = off;
+BEGIN TRANSACTION;
+
+-- Table: Karzinka
+DROP TABLE IF EXISTS Karzinka;
+
+CREATE TABLE IF NOT EXISTS Karzinka (
+    karzinka_id  INTEGER       PRIMARY KEY,
+    product_name VARCHAR (200) NOT NULL,
+    price        REAL          NOT NULL,
+    expire       CHAR (20) 
+);
+
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (1, 'Olma', 15000.0, '15 kun');
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (2, 'Banan', 15000.0, '7 kun');
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (3, 'Non', 15000.0, '14 soat');
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (4, 'Shokolad', 15000.0, '3 oy');
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (5, 'Gosht', 15000.0, '3 kun');
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (6, 'Sut', 15000.0, '15 kun');
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (7, 'Salfetka', 15000.0, NULL);
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (8, 'Olma', 15000.0, '15 kun');
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (9, 'Banan', 15000.0, '7 kun');
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (10, 'Non', 15000.0, '14 soat');
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (11, 'Shokolad', 15000.0, '3 oy');
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (12, 'Gosht', 15000.0, '3 kun');
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (13, 'Sut', 15000.0, '15 kun');
+INSERT INTO Karzinka (karzinka_id, product_name, price, expire) VALUES (14, 'Salfetka', 15000.0, '6 oy');
+
+COMMIT TRANSACTION;
+PRAGMA foreign_keys = on;
